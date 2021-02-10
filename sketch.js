@@ -40,7 +40,7 @@ function setup(){
 }
 
 function draw(){
-    background(sky);
+    sky = loadImage("blueSky.png");
     
     Engine.update(myEngine);
     stroke ("black");
