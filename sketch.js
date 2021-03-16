@@ -16,7 +16,7 @@ var candy1;
 
 function preload(){
 
-sky = loadImage(blueSky.png");
+sky = loadImage("blueSky.png");
 //load image for PC
 
 //candy1 = loadImage("images/candyClipart.jpg");
