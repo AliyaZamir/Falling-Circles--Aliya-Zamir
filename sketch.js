@@ -16,7 +16,8 @@ var candy1;
 
 function preload(){
 
-sky = loadImage("blueSky.png");
+sky = loadImage("images/blueSky.png");
+loadSound(gameping);
 //load image for PC
 
 //candy1 = loadImage("images/candyClipart.jpg");
@@ -40,7 +41,7 @@ function setup(){
 }
 
 function draw(){
-    sky = loadImage("blueSky.png");
+    background(sky);
     
     Engine.update(myEngine);
     stroke ("black");
@@ -68,7 +69,7 @@ function draw(){
     c1 = dropCandies();
     candyArray.push(c1);
     
-    
+    dropCandies.play(gameping)
       
     
   }
